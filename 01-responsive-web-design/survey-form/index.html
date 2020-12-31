@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">    
+  </head>
+  <body >
+    <div id="main" class="content-text">
+      <h1 id="title">What's Your Stack?</h1>
+      <p id="description">
+        Help the dev community by answering a few questions about the technologies you use.
+      </p>
+      <form id="survey-form">
+        <label class="main-label" for="name" id="name-label">
+          Name
+          <input id="name" type="text" size=50px placeholder="Enter your name" onfocus="colorInput('name')" autocomplete="off" required/>
+        </label>
+        <label class="main-label" for="email" id="email-label">
+          Email
+          <input id="email" type="email" size=50px placeholder="Enter your email" onfocus="colorInput('email')" autocomplete="off" required/>
+        </label>
+        <label class="main-label" for="number" id="number-label">
+          How many years have you been coding for? 
+          <input id="number" type="number" min=0 max=50 size=25px onfocus="colorInput('number')" autocomplete="off" placeholder="#"/>
+        </label>
+        <label class="main-label" for="dropdown" id="favorite">
+          What is your favorite programming language? 
+          <select id="dropdown" name="favorite-language">
+            <option value="javascript">JavaScript</option>
+            <option value="python">Python</option>
+            <option value="cpp">C++</option>
+            <option value="c">C</option>
+            <option value="c">Go</option>
+            <option value="other">Other</option>
+          </select>
+        </label>
+        <h2>What kind of job do you prefer?</h2>
+        <div class="container">
+          <label class="custom-container custom-radio" for="frontend">Front end 
+            <input type="radio" id="frontend" type="radio" name="web" value="frontend">
+            <span class="dot"></span>
+          </label>                      
+          <label class="custom-container custom-radio" for="backend">Back end
+            <input id="backend" type="radio" name="web" value="backend">
+            <span class="dot"></span>
+          </label>                      
+          <label class="custom-container custom-radio" for="fullstack">Fullstack
+            <input id="fullstack" type="radio" name="web" value="fullstack">
+            <span class="dot"></span>
+          </label>                      
+        </div>
+        <h2>Check all of the frameworks you use.</h2>
+        <div class="container">
+          <label class="custom-container" for="react">React
+            <input type="checkbox" id="react" value="react">
+            <span class="checkmark"></span>
+          </label>          
+          <label class="custom-container" for="angular">Angular
+            <input type="checkbox" id="angular" value="angular">
+            <span class="checkmark"></span>
+          </label>          
+          <label class="custom-container" for="vue">Vue
+            <input type="checkbox" id="vue" value="vue">
+            <span class="checkmark"></span>
+          </label>          
+          <label class="custom-container" for="django">Django
+            <input type="checkbox" id="django" value="django">
+            <span class="checkmark"></span>
+          </label>          
+          <label class="custom-container" for="jquery">jQuery
+            <input type="checkbox" id="jquery" value="jquery">
+            <span class="checkmark"></span>
+          </label>          
+          <label class="custom-container">Express
+            <input type="checkbox" id="express" value="express">
+            <span class="checkmark"></span>
+          </label>          
+          <label class="custom-container" for="ruby">Ruby on Rails
+            <input type="checkbox" id="ruby" value="ruby">
+            <span class="checkmark"></span>
+          </label>          
+          <label class="custom-container" for="flask">Flask
+            <input type="checkbox" id="flask" value="flask">
+            <span class="checkmark"></span>
+          </label>          
+          <label class="custom-container" for="spring">Spring
+            <input type="checkbox" id="spring" value="spring">
+            <span class="checkmark"></span>
+          </label>          
+          <label class="custom-container" for="asp-net">ASP.Net
+            <input type="checkbox" id="asp-net" value="asp-net">
+            <span class="checkmark"></span>
+          </label>          
+          <label class="custom-container" for="laravel">Laravel
+            <input type="checkbox" id="laravel" value="laravel">
+            <span class="checkmark"></span>
+          </label>          
+          <label class="custom-container" for="symfony">Symfony
+            <input type="checkbox" id="symfony" value="symfony">
+            <span class="checkmark"></span>
+          </label>          
+          <label class="custom-container" for="drupal">Drupal
+            <input type="checkbox" id="drupal" value="drupal">
+            <span class="checkmark"></span>
+          </label>          
+      </div>
+      <h2>Other</h2>
+        <label class="main-label" for="other">
+          <textarea rows="3" cols="75" id="other-info" onfocus="colorInput('other-info')" placeholder="Enter any other info you would like to share with us."></textarea>
+          <button id="submit">Submit</button>
+        </label>
+      </form>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script>
+      function colorInput(id) {
+        document.getElementById(id).style.background = "#e0d0be";
+      }
+    </script>
+  </body>
+</html>
