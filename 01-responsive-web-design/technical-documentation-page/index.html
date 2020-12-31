@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dessL Technical Documentation Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rasa:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css">   
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>
+        dessL Documentation
+      </header>
+      <ul>
+        <li>
+          <a class="nav-link" href="#Introduction">Introduction</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Variables">Variables</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Conditions">Conditions</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Loops">Loops</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Arrays">Arrays</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Functions">Functions</a>
+        </li>      
+        <li>
+          <a class="nav-link" href="#Reserved_Words">Reserved Words</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Disclaimer">Disclaimer</a>
+        </li>      
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section id="Introduction" class="main-section">
+        <header>
+          Introduction
+        </header>
+        <p>
+          This documentation is about an invented language, dessL, which is a simplified interpreted language, inspired by python and very close to pseudocode.
+        </p>
+        <p>
+          As of this writing, the language is not created yet, therefore you will not be able to test it, only digest it.
+        </p>
+        <p>
+          To start off, let's observe how the comments in dessL are simple:
+        </p>
+        <code>
+          start
+          print "Hello World"
+          -- this is a comment and will not be processed
+          - multi-line comments are as simple as adding only 1 dash
+          -- and this would end the multi-line comments.
+          end
+        </code>
+      </section>
+      <section id="Variables" class="main-section">
+        <header>
+          Variables      
+        </header>
+        <p>
+          desseL proposes a very intuitive way to store data into variables. Since it is taking its roots in python, you can assign a variable without declaring its type. This simplifies the work for the programmer as everything is done behind the scenes. For example, if you want to assign <strong>10</strong> to the variable <strong>number</strong>, you would proceeed as such:
+        </p>
+        <code>
+          start
+          10 in number
+          end
+        </code>
+        <p>
+          As you can see, the program always starts with the <em>start</em> keyword and ends with the <em>end</em> keyword. For strings, the assignation goes like this:
+        </p>
+        <code>
+          start
+          "Dependency over double quotes" in myString
+          end
+        </code>      
+        <p>
+          It is worthy of note to state that the variables are case-sensitive, as in most languages. Hence, <strong>myString</strong> is different than <strong>my_string</strong> or <strong>mystring</strong>. Per convention, we cannot start a variable with a number. Therefore, <strong>5myString</strong> would not be valid.
+        </p>
+        <p>
+          Note that there is a distinction between single quotes and double quotes in dessL. Since, as you will see below, the single quotes are used in looping, you cannot use single quotes for strings.
+        </p>
+      </section>
+      <section id="Conditions" class="main-section">
+        <header>
+          Conditions       
+        </header>
+        <p>Conditions are very simple in dessL. For example, the following will print <strong>Hello World</strong></p>
+        <code>
+          start
+          true in myBool
+          if myBool print "Hello World"
+          end
+        </code>
+        <p>Evidently, adding an else is simple too:</p>
+        <code>
+          start
+          false in myBool
+          if myBool print "Hello World" else print "Goodbye World"
+          end
+        </code>      
+      </section>
+      <section id="Loops" class="main-section">
+        <header>
+          Loops 
+        </header>
+        <p>Loops in dessL have taken the most simple form possible. One only has to use the reserved <strong>loop</strong> keyword and declare the loop as in the following example that prints to the console "Hello World" 5 times:</p>
+        <code>
+          start
+          'loop 5 print' "Hello World"
+          end
+        </code>
+        <p>Another example, this time adding 1 to a variable 5 times:</p>
+        <code>
+          start
+          0 in myVariable
+          'loop 5 add' myVariable 1
+          end
+        </code>      
+        <p>As you will see in the reserved words, all arithmetic operations available in other languages are available in dessL.</p>
+        <code>
+          -- the following code will return to the console 0 five times.
+          start
+          8 in myVariable
+          'loop 5 mod' myVariable 2
+          end
+        </code>      
+      </section>
+      <section id="Arrays" class="main-section">
+        <header>
+          Arrays       
+        </header>
+        <p>Arrays in dessL are quite like most languages:</p>
+        <code>
+          start
+          [1,2,3,4,5] in myArray
+          print myArray
+          end
+          -- this would print 1,2,3,4,5
+        </code>
+        <p>Using loops in arrays:</p>
+        <code>
+          start
+          [1,2,3,4,5] in myArray
+          'loop myArray.length print' myArray
+          end
+          -- this would print 
+          - 1
+          - 2
+          - 3
+          - 4
+          - 5
+          -- looping over the entire array.
+        </code>      
+      </section>    
+      <section id="Functions" class="main-section">
+        <header>
+          Functions
+        </header>
+        <p>Functions in dessL are created with the word <strong>func</strong> and are called like most languages with the ().</p>
+        <code>
+          start
+          func = print "Hello World"
+          func()
+          end
+          -- this prints Hello World
+        </code>
+        <p>You can pass in argument to the function also:</p>
+        <code>
+          start
+          func(x, y) = x add y return
+          func(2, 3)
+          end
+          -- this returns 5. 
+        </code>
+        <p>Notice in the last example the return at the end to return the value. It this example, since there was only one operation inside the function, dessL evaluates the return automatically. However, in the following example, a value mus be added for the return to be evaluated:</p>
+        <code>
+          start
+          func(x, y) = 2 in toReturn, x add y, return toReturn
+          func(2, 3)
+          end
+          -- this returns 2. 
+        </code>      
+      </section>    
+      </section>
+      <section id="Reserved_Words" class="main-section">
+        <header>
+        Reserved Words      
+        </header>
+        <p>You can find the list of reserved words in dessL below. Please note that since this language is still under development, new reserved words can be added from time to time.</p>
+        <ul>
+          <li>start</li>
+          <li>print</li>
+          <li>end</li>
+          <li>in</li>
+          <li>true</li>
+          <li>false</li>
+          <li>if</li>
+          <li>loop</li>
+          <li>else</li>
+          <li>add</li>
+          <li>sub</li>
+          <li>mult</li>
+          <li>div</li>
+          <li>div</li>
+          <li>mod</li>
+          <li>func</li>
+        </ul>
+      </section>
+      <section id="Disclaimer" class="main-section">
+        <header>
+          Disclaimer   
+        </header>      
+        <p>dessL has been created by Sylvain Dessureault as a coding assignment in Free Code Camp. It is not a working programming language, even though it could become one someday. Thank you for having taken the time to read this documentation.</p>
+      </section>  
+    </main>
+    
+  <script src="https://kit.fontawesome.com/ffaa8e5571.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
