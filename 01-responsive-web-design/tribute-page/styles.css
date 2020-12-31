@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Century Gothic";
+}
+.responsive {
+  max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.tribute-links {
+  text-align: left;
+  margin-left: 200px;
+  margin-right: 200px;
+  line-height: 2;
+}
+#title {
+  padding: 20px;
+}
+#main {
+  margin: auto;
+  text-align: center;
+  color: #ac8153;
+  background-color: #e6f2ff;
+  background-image: url("img/mason-hassoun-gBXyuo65Uck-unsplash.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#img-div {
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+  margin-bottom: 16px;
+}
+#tribute-info {
+  background-color: #f2f2f2;
+  opacity: 0.6;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+#image {
+  border-radius: 5px;
+  opacity: 0.5;
+}
+#image:hover {
+  border-radius: 5px;
+  cursor: url("img/king.png"), auto;
+  animation: animate-card;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+@keyframes animate-card {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+    box-shadow: 2px 2px #ac8153, 3px 3px #ac8153, 4px 4px #ac8153;
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+  }
+}
+#blurb {
+  margin-top: 10px;
+}
+#footer {
+  padding: 25px;
+}
