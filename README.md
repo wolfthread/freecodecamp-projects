@@ -16,6 +16,7 @@ This repo contains the code of my projects for each certification on freeCodeCam
 
 # JavaScript Algorithms and Data Structures Certification
 
-| Project                                                                                           |
-| ------------------------------------------------------------------------------------------------- |
-| [Palindrome Checker](02-javascript-algorithms-and-data-structures-projects/palindrome-checker.js) |
+| Project                                                                                                     |
+| ----------------------------------------------------------------------------------------------------------- |
+| [Palindrome Checker](02-javascript-algorithms-and-data-structures-projects/palindrome-checker.js)           |
+| [Roman Numeral Converter](02-javascript-algorithms-and-data-structures-projects/roman-numeral-converter.js) |
