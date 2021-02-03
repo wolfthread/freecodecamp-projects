@@ -13,3 +13,9 @@ This repo contains the code of my projects for each certification on freeCodeCam
 | [Product Landing Page](01-responsive-web-design/product-landing-page)                 | [Codepen](https://codepen.io/wolfthread/full/ExgQOWd) |
 | [Technical Documentation Page](01-responsive-web-design/technical-documentation-page) | [Codepen](https://codepen.io/wolfthread/full/WNGMYjj) |
 | [Personal Portfolio](01-responsive-web-design/personal-portfolio-webpage)             | [Codepen](https://codepen.io/wolfthread/full/xxEYQdm) |
+
+# JavaScript Algorithms and Data Structures Certification
+
+| Project                                                                                           |
+| ------------------------------------------------------------------------------------------------- |
+| [Palindrome Checker](02-javascript-algorithms-and-data-structures-projects/palindrome-checker.js) |
