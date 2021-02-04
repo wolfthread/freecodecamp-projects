@@ -19,5 +19,3 @@ function palindrome(str) {
   // compare and return
   return cleanedStrFwd === cleanedStrBwd;
 }
-
-console.log(palindrome("eye"));

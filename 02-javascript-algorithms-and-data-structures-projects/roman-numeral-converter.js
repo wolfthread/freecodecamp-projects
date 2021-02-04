@@ -86,5 +86,3 @@ function convertToRoman(num) {
   // returning array as a string
   return allRomanParts.join("");
 }
-
-convertToRoman(2);

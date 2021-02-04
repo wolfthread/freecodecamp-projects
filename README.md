@@ -20,3 +20,4 @@ This repo contains the code of my projects for each certification on freeCodeCam
 | ----------------------------------------------------------------------------------------------------------- |
 | [Palindrome Checker](02-javascript-algorithms-and-data-structures-projects/palindrome-checker.js)           |
 | [Roman Numeral Converter](02-javascript-algorithms-and-data-structures-projects/roman-numeral-converter.js) |
+| [Caesars Cipher](02-javascript-algorithms-and-data-structures-projects/caesars-cipher.js)                   |
