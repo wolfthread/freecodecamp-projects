@@ -22,3 +22,4 @@ This repo contains the code of my projects for each certification on freeCodeCam
 | [Roman Numeral Converter](02-javascript-algorithms-and-data-structures-projects/roman-numeral-converter.js)       |
 | [Caesars Cipher](02-javascript-algorithms-and-data-structures-projects/caesars-cipher.js)                         |
 | [Telephone Number Validator](02-javascript-algorithms-and-data-structures-projects/telephone-number-validator.js) |
+| [Cash Register](02-javascript-algorithms-and-data-structures-projects/cash-register.js)                           |
